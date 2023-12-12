@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/skyWP.png);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+
+}
+header .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color: white;
+}
+header nav{
+    margin-left: 25%;
+}
+header a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    position: relative;
+    font-weight: 500;
+    transition: .5s;
+}
+
+header a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+header a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+header .button1{
+    width: 130px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid white;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: white;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+header .button1:hover{
+    background: grey;
+    cursor: pointer;
+}
+
+.burger{
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    top: 22px;
+    right: 195px;
+    visibility: collapse;
+    
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width : 885px){
+    nav{
+        display: none;
+    }
+
+    .burger{
+        visibility: visible;
+    }
+    
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  .main {
+    transition: .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

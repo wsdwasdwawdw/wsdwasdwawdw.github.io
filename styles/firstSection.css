@@ -1,0 +1,33 @@
+.niluo{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgba(233, 231, 210, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+.contents{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+img{
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+.description{
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.niluo h1{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}

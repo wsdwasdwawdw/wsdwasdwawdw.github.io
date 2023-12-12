@@ -1,0 +1,39 @@
+/*
+html, body{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url(Nilou.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 10px;
+    padding: 50px;
+    width: 80%;
+    height: fit-content;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background: rgb(2, 133, 133, .5);
+    color: aliceblue;
+}
+
+#quote {
+    font-family: "Bradley Hand ITC";
+    text-align: center;
+    font-size: 20px;
+}
+
+#author {
+    margin-top: 10px;
+    font-family: "Bradley Hand ITC";
+    font-size: 35px;
+}
+*/

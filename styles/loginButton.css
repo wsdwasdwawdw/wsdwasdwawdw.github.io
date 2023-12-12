@@ -1,0 +1,271 @@
+form{
+    background: transparent;
+    height: fit-content;
+}
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 420px;
+    height: fit-content;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    visibility: visible;
+}
+
+.wrapper .ion-icon{
+    top: 0;
+    right: 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+
+.wrapper .LogReg{
+    position: absolute;
+    top: 5px;
+    left: 36%;
+}
+
+.wrapper .LogReg button{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.wrapper .LogReg .log-sec{
+    background-color: rgba(255, 255, 255, .2);
+}
+.wrapper .LogReg .reg-sec{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+
+.wrapper .ion-icon:hover{
+    background: darkcyan;
+    cursor: pointer;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+/* Login */
+
+#Login{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.Login .input{
+    position: relative;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.Login .input input{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.Login .input i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.Login .input input::placeholder{
+    color: white;
+}
+
+.Login .remember{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.Login .forgot {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.Login .forgot:hover{
+    text-decoration: underline;
+}
+
+.Login .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 0 10 rgba(0, 0, 0, .1);
+}
+
+.Login a{
+    text-decoration: none;
+    color: white;
+}
+
+.Login a:hover{
+    text-decoration: underline;
+}
+
+
+/* Register */
+
+#Register{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+.Register{
+    color: white;
+}
+
+.Register .username, .password, .confirm-password{
+    width: 100%;
+    margin-top:  10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(225, 227, 230);
+    border: none;
+}
+
+.Register p{
+    margin: 10px 0px;
+}
+
+.Register .birthday{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Register .date-txt{
+    border: none;
+    width: 40%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(225, 227, 230);
+}
+
+.Register .gender{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: relative;
+}
+.Register .gender input{
+    width: 100%;
+}
+.Register .gender div{
+    display: inline-block;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100px;
+    background-color: rgb(225, 227, 230);
+    color: black;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+}
+
+.Register .gender input{
+    height: 17px;
+    position: absolute;
+    margin: 0;
+    right: -75px;
+    width: 180%;
+}
+.Register .input{
+    position: relative;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.Register .input input{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.Register .input i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.Register .input input::placeholder{
+    color: white;
+}
+
+ #Register .signUp-btn{
+    position: relative;
+    left: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    width: 40%;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.isRegistered{
+    display: none;
+}
+
+.LoginForm{
+    display: none;
+}
+
+.Hidden{
+    display: none;
+}
