@@ -21,7 +21,7 @@ function signUp(){
         newPassword.value = "";
         confirmPassword.value = "";
 
-        localStorage.setItem("account", JSON.stringify(account));
+        sessionStorage.setItem("account", JSON.stringify(account));
     
         console.log(account);
         
